@@ -1,0 +1,28 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo {
+    position: relative;
+    width: 6rem;
+    height: auto; 
+    top: 0.5em;
+    left : 12%;
+  }
+  
+  .mail, .call {
+    position:absolute;
+    width: 10em; 
+    height: auto;
+    top: 3.5em;
+  }
+  
+  .mail {
+    left: 55%; 
+  }
+  
+  .call {
+    left: 70%; 
+  }
