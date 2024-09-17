@@ -12,18 +12,18 @@
     border: 0px;
   }
   
-  .footer .mail, .call {
+  .mail, .call {
     position:absolute;
     width: 10em; 
     height: auto;
     top: 3.5em;
   }
   
-  .footer .mail {
+  .mail {
     left: 55%; 
   }
   
-   .footer .call {
+   .call {
     left: 70%; 
   }
   
