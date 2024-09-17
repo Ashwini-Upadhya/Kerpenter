@@ -1,0 +1,217 @@
+*{
+  overflow-x: hidden;
+}
+
+.topBar {
+  display: block;
+  background-color: #2C3765;
+  width: 100%;
+  height: 2rem;
+  gap: 0px;
+}
+
+.logo {
+  position: absolute;
+  width: 6rem;
+  height: auto; 
+  top: 2.5em;
+  left: 9.5rem;
+}
+
+.mail, .call {
+  position:absolute;
+  width: 7em; 
+  height: auto;
+  top: 4em;
+}
+
+.mail {
+  left: 55%; 
+}
+
+.call {
+  left: 70%; 
+}
+
+.menu {
+  display: flex;
+  position: relative;
+  width: 80%; 
+  margin-left: 10%;
+  height: auto;
+  top:5.7rem;
+  justify-content: end;
+  background-color: #FFB342;
+}
+
+.getStarted {
+  width: auto;
+  height: 2.3rem;
+  padding: 0.5rem 1.2rem; 
+  border-radius: 10px;
+  background-color: #1C2752;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px;
+  border: 0px;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url('Image.svg');
+  background-size: cover;
+  margin-top: 4.7rem;
+  height: auto;
+  min-height: 600px;
+  justify-content: start; 
+  align-items: start; 
+}
+
+.banner .form{
+  display: none;
+}
+
+.textdiv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%; 
+  /* max-width: 600px; */
+  margin-left: 20%; 
+  justify-content: start;
+}
+
+.banner h1 {
+  font-size: 1.5rem; 
+  line-height: 1.4; 
+  padding-top: 5rem;
+  color: white;
+  text-align: left;
+}
+
+.banner p {
+  font-size: 1rem;
+  padding-top: 1rem;
+  line-height: 1.4rem;
+  color: white;
+  text-align: left;
+}
+
+.banner .getStarted {
+  background-color: #FFB342;
+  margin-left: 0;
+  color: #1C2752;
+}
+
+.secondBanner{
+  display: flex;
+  position: relative;
+  background-color: #FFB342;
+  width: 100%;
+  height:15rem;
+  top: auto;
+}
+
+.secondBanner .getStarted{
+  display: none;
+}
+
+.secondBanner .form{
+  display: block;
+}
+
+.secondBanner .textdiv{
+  display: flex;
+  width: 30%;
+  align-content: center;
+  row-gap: 0rem;
+}
+
+.secondBanner h1, p{
+  color: #1C2752;
+}
+
+.subsButton{
+  display: inline;
+  padding: 10px;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  border: 2px solid white;
+  width: 250px;
+  outline: none;
+  color: #1C275233; 
+  font-weight: 400;
+  background-color: #FFB342;
+  font-size: small;
+}
+#subInput{
+  color: #1C275233;
+
+}
+
+#subutton{
+  background-color: white;
+  color: #1C2752;
+  margin-left: -1%;
+  border: white;
+  width: 8em;
+  padding: 12px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 20%; 
+    top: 5%;
+    left: 5%;
+  }
+
+  .mail, .call {
+    width: 7em;
+    top: 7%;
+  }
+
+  .mail {
+    left: 35%;
+    height:auto;
+  }
+
+  .call {
+    left: 70%;
+    height:auto;
+  }
+
+  .menu {
+    top: 6rem;
+    justify-content: end;
+    height: 4rem;
+  }
+
+  .banner {
+    flex-direction: column;
+    height: auto;
+    margin-top: 20%;
+  }
+
+  .textdiv {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+    justify-content: end;
+    text-align: center;
+  }
+
+  .banner p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .getStarted {
+    display: block;
+    height:2.5rem;
+  }
+}
