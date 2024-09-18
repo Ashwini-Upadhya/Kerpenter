@@ -6,26 +6,38 @@
   }
   
   .footer .header{
+    position: relative;
     display:flex;
-    padding-bottom: 2rem ;
+    padding-bottom: 1rem ;
     background-color: #1C2752;
     border: 0px;
   }
-  
-  .mail, .call {
+
+  .footer .mail{
+    left: 40%;
+    top:40%;
+  }
+
+  .footer .call{
+    top:40%;
+    left: 60%;
+  }
+
+  .footer .location{
     position:absolute;
-    width: 10em; 
-    height: auto;
-    top: 3.5em;
+    top:40%;
+    left: 80%;
   }
   
-  .mail {
-    left: 55%; 
+  .footer .social-text{
+    color:white;
+  }
+
+  .white{
+    display:flex;
+    align-items: center;
   }
   
-   .call {
-    left: 70%; 
-  }
   
   .footerDiv{
     display:grid;
@@ -33,7 +45,7 @@
     padding: 5% 0%;
     border-top:1px solid #4B557D;
     color: white;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns:2fr 1fr 1fr;
     grid-template-rows: auto;
     background-color: #1C2752;
     justify-content: center;
@@ -54,6 +66,7 @@
   }
   
   #QuickLink {
+    padding-left: 10%;
     border:0px;
   }
   
@@ -75,7 +88,168 @@
   }
 
   .footerDiv p{
-    color:white;
+    color:rgba(255, 255, 255, 0.774);
     text-align: start;
     padding:5% 10% 10% 10%;
+  }
+
+  .secondBanner{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    position: relative;
+    align-items: center;
+    background-color: #FFB342;
+    top: auto;
+    width: 100%;
+    padding: 5% 0;
+  }
+  
+  .secondBanner .getStarted{
+    display: none;
+  }
+  
+  .secondBanner .form{
+    display: block;
+  }
+  
+  .secondBanner .textdiv{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-content: center;
+    row-gap: 0rem;
+  }
+  
+  .secondBanner h1{
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    color: #1C2752;
+    font-size: 2rem;
+  }
+  .secondBanner p{
+    margin: 0px;
+    max-width: 390px;
+    color: #1C2752;
+    font-size: 1rem;
+  }
+  
+  strong{
+    display: inline;
+  }
+
+  .subsButton{
+    display: inline;
+    padding: 1.5% 5%;
+    margin-top: 5%;
+    border: 2px solid white;
+    width: 40%;
+    outline: none;
+    color: #1C2752; 
+    font-weight: 400;
+    background-color: #FFB342;
+    font-size: small;
+  }
+
+  #subInput{
+    color: #1C2752;
+  
+  }
+  
+  #subutton{
+    background-color: white;
+    width: fit-content;
+    color: #1C2752;
+    margin-left: -1%;
+    border: 2px solid white;
+    padding: 1.5% 5%;
+  }  
+
+  @media(max-width:768px){
+    .footer .header{
+      width: 100%;
+    }
+
+    .footer .logo{
+      margin-left: 5%;
+    }
+
+    .footer .mail{
+      top:30%;
+      left: 33%;
+    }
+  
+    .footer .call{
+      top:30%;
+      left: 57%;
+    }
+  
+    .footer .location{
+      position:absolute;
+      top:27%;
+      left: 79%;
+    }
+
+    .footer .icon{
+      margin: 0%;
+    }
+
+    .footer .social-text strong{
+      font-size: 50%;
+    }
+
+    .footer .social-text p{
+      font-size: 10%;
+    }
+
+    .footerDiv{
+      width:90%;
+      font-size: 65%;
+    }
+
+    .footerDiv img{
+      width: 23%;
+    }
+
+    .secondBanner .textdiv{
+      margin-left: 1%;
+      max-width: 100%;
+    }
+
+    .secondBanner h1{
+      margin: 0px;
+      max-width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      color: #1C2752;
+      font-size: 90%;
+    }
+
+    .secondBanner .form{
+      margin-left: 5%;
+      white-space: nowrap;
+    }
+
+    .subsButton{
+      position: relative;
+      margin-left: 0%;
+      width: 50%;
+      font-size: 60%;
+    }
+    #subtton{
+      width: 40%;
+      padding: 0.8% 0.3%;
+    }
+
+    .secondBanner p{
+      display: flex;
+      margin: 0px;
+      max-width: 99%;
+      flex-wrap: wrap;
+      color: #1C2752;
+      font-size: 70%;
+    }
   }

@@ -1,11 +1,39 @@
 import React from "react";
 import Header from "./Header";
+import Banner from "./banner";
 import './Footer.css'
 
 export default function Footer() {
     return(
         <div className="footer">
-            <Header/>
+            <Banner className="secondBanner" textCalss="textdiv"  Header="Subscribe Our Newsletter"
+                Parra={<p><strong>stay in touch with us to get latest news.</strong> maximus mattis est facilisi. In sed pretium Proin pretium id urna sit amet tincidunt.</p>}></Banner>
+            <div className="header White">
+                <img className='logo' src='public/Group 2 1.svg'></img>
+                <div>
+                    <div class="social-icon mail">
+                        <img src="mail white.svg" alt="Mail Icon" className="icon" />
+                        <div class="social-text">
+                            <strong>Mail Us</strong>
+                            <p>Info@Example.com</p>
+                        </div>
+                    </div>
+                    <div class="social-icon call">
+                        <img src="Call white.svg" alt="Call Icon" className="icon" />
+                        <div class="social-text">
+                            <strong>Call Us</strong>
+                            <p>+01 569 896 654</p>
+                        </div>
+                    </div>
+                    <div class="social-icon location">
+                        <img src="Location white.svg" alt="Location Icon" className="icon" />
+                        <div class="social-text">
+                            <strong>Location</strong>
+                            <p>Amsterdam, 109-74</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div  className="footerDiv">
                 <span className="item">
                     <p>Denouncing pleasure and praising pain was born and I will givg you a coghmplete acchount of the system, and expound the actual</p>

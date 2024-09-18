@@ -1,28 +1,106 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 8rem;
+  height: auto;
+  margin-left: 12%;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.icon {
+  width: 2rem;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.social-text {
+  color: #1C2752;
+}
+
+.social-text strong {
+  font-weight: bold;
+}
+
+.social-text p {
+  margin: 0;
+  color: gray;
+}
+
+.mail{
+  position:absolute;
+  left:44%;
+}
+
+.call{
+  position: absolute;
+  left: 73%;
+}
+
+
+@media (max-width: 768px) {
+
+  .header {
+      padding: 0.5rem;
+      justify-content: space-between;
   }
 
   .logo {
-    position: relative;
-    width: 6rem;
-    height: auto; 
-    top: 0.5em;
-    left : 12%;
+      width: 5rem;
+      margin-left: 12%;
   }
-  
+
+  .social-icon {
+      margin-right: 0px;
+  }
+
+  .icon {
+      width: 1.7rem;
+      margin-right: 0.1rem;
+  }
+
   .mail, .call {
-    position:absolute;
-    width: 10em; 
-    height: auto;
-    top: 3.5em;
+      width: auto;
   }
-  
-  .mail {
-    left: 55%; 
+
+  .social-text {
+      margin-left: 0.25rem;
   }
-  
-  .call {
-    left: 70%; 
+
+  .social-text strong, .social-text p{
+      font-size: 0.75rem;
   }
+}
+
+@media (max-width: 480px) {
+  .header {
+      padding: 0.25rem;
+      justify-content: space-between;
+  }
+
+  .logo {
+      width: 4rem;
+  }
+
+  .icon {
+      width: 1.5rem;
+  }
+
+  .social-text strong{
+      font-size: 0.60rem;
+  }
+
+  .social-text p {
+    font-size: 0.40rem;
+  }
+}
