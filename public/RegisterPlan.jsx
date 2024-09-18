@@ -13,6 +13,22 @@ export default function RegisterPlan() {
                 <div>
                     <img src="div.elementor-widget-wrap.svg" alt="" />
                 </div>
+                <div>
+                    <form action="/actin">
+                    <imput></imput>
+                    <imput></imput>
+                    <imput></imput>
+                    <imput></imput>
+                    <imput></imput>
+                    <imput></imput>
+                    <imput></imput>
+                    <imput></imput>
+                    <imput></imput>
+                    <imput></imput>
+                    
+                    <imput></imput>
+                    </form>
+                </div>
             </div>
 
             <Footer/>
