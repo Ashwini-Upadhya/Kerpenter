@@ -15,18 +15,26 @@ export default function RegisterPlan() {
                 </div>
                 <div>
                     <form action="/actin">
-                    <imput></imput>
-                    <imput></imput>
-                    <imput></imput>
-                    <imput></imput>
-                    <imput></imput>
-                    <imput></imput>
-                    <imput></imput>
-                    <imput></imput>
-                    <imput></imput>
-                    <imput></imput>
+                    <p>Company Name</p>
+                    <imput type="text"></imput>
+                    <p>Siret</p>
+                    <imput type="text"></imput>
+                    <p>First Name</p>
+                    <imput type="text"></imput>
+                    <p>Last Name</p>
+                    <imput type="text"></imput>
+                    <p>E-mail</p>
+                    <imput type="email"></imput>
+                    <p>Address</p>
+                    <imput type="text"></imput>
+                    <p>Phone</p>
+                    <imput type="text"></imput>
+                    <p>Password</p>
+                    <imput type="password"></imput>
                     
-                    <imput></imput>
+                    <imput type="checkbox"></imput>
+                    <a href="">Accept Terms and Conditions</a>
+                    <button type="submit">Register</button>
                     </form>
                 </div>
             </div>
