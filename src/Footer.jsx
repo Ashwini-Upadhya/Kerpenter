@@ -11,23 +11,23 @@ export default function Footer() {
             <div className="header White">
                 <img className='logo' src='public/Group 2 1.svg'></img>
                 <div>
-                    <div class="social-icon mail">
+                    <div className="social-icon mail">
                         <img src="mail white.svg" alt="Mail Icon" className="icon" />
-                        <div class="social-text">
+                        <div className="social-text">
                             <strong>Mail Us</strong>
                             <p>Info@Example.com</p>
                         </div>
                     </div>
-                    <div class="social-icon call">
+                    <div className="social-icon call">
                         <img src="Call white.svg" alt="Call Icon" className="icon" />
-                        <div class="social-text">
+                        <div className="social-text">
                             <strong>Call Us</strong>
                             <p>+01 569 896 654</p>
                         </div>
                     </div>
-                    <div class="social-icon location">
+                    <div className="social-icon location">
                         <img src="Location white.svg" alt="Location Icon" className="icon" />
-                        <div class="social-text">
+                        <div className="social-text">
                             <strong>Location</strong>
                             <p>Amsterdam, 109-74</p>
                         </div>

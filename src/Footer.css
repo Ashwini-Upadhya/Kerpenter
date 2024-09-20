@@ -118,6 +118,7 @@
     margin-left: 15%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     align-content: center;
+    width: 35vw;
     row-gap: 0rem;
   }
   
@@ -128,11 +129,11 @@
     white-space: nowrap;
     flex-wrap: nowrap;
     color: #1C2752;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .secondBanner p{
     margin: 0px;
-    max-width: 390px;
+    max-width: 95vw;
     color: #1C2752;
     font-size: 1rem;
   }
@@ -167,14 +168,69 @@
     border: 2px solid white;
     padding: 1.5% 5%;
   }  
+  
+  @media(max-width:600px){
+    
+    .secondBanner{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
 
-  @media(max-width:768px){
+    .secondBanner .textdiv{
+      margin-left: 1%;
+      width: 100%;
+    }
+  
+    .secondBanner h1{
+      margin: 0px;
+      max-width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      color: #1C2752;
+      font-size: 95%;
+    }
+  
+    .secondBanner .form{
+      left: 0px;
+      margin-top: 5vw;
+      width: auto;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+  
+    .subsButton{
+      position: relative;
+      margin-left: 0%;
+      font-size: 60%;
+      width: 40vw;
+      overflow: hidden;
+    }
+
+    /* .subsButton input {
+      width: 90vw;
+    } */
+
+    #subtton{
+      width: 40%;
+      padding: 0.8% 0.3%;
+    }
+  
+    .secondBanner p{
+      display: flex;
+      margin: 0px;
+      flex-wrap: wrap;
+      color: #1C2752;
+      font-size: 90%;
+    }
+
     .footer .header{
       width: 100%;
     }
 
     .footer .logo{
-      margin-left: 5%;
+      margin-left: 10%;
     }
 
     .footer .mail{
@@ -211,26 +267,82 @@
     }
 
     .footerDiv img{
-      width: 23%;
+      width: 7vw;
     }
 
+  }
+  @media(min-width:1500px){
+    .footer .header{
+      width: 100%;
+    }
+    
     .secondBanner .textdiv{
-      margin-left: 1%;
+      margin-left: 30%;
       max-width: 100%;
     }
 
     .secondBanner h1{
       margin: 0px;
       max-width: 100%;
-      display: flex;
-      flex-wrap: nowrap;
+      white-space: nowrap;
       color: #1C2752;
-      font-size: 90%;
+      font-size: 2rem;
+    }
+
+    .secondBanner p{
+      margin: 0px;
+      max-width: 35vw;
+      color: #1C2752;
+      font-size: 1.2rem;
     }
 
     .secondBanner .form{
+      
       margin-left: 5%;
       white-space: nowrap;
+      font-size: 2rem;
+    }
+
+    .footer .logo{
+      width: 9vw;
+      margin-left: 10%;
+    }
+
+    .footer .mail{
+      top:30%;
+      left: 33%;
+    }
+  
+    .footer .call{
+      top:30%;
+      left: 57%;
+    }
+  
+    .footer .location{
+      position:absolute;
+      top:27%;
+      left: 79%;
+    }
+
+    .footer .icon{
+      margin: 0%;
+    }
+
+    .footer .social-text strong{
+      font-size: 1.5rem;
+    }
+
+    .footer .social-text p{
+      font-size: 1.2rem;
+    }
+
+    .footerDiv{
+      width:80%;
+      font-size: 1.5rem;
+    }
+
+    .footerDiv img{
+      width: 7vw;
     }
 
     .subsButton{
@@ -244,12 +356,4 @@
       padding: 0.8% 0.3%;
     }
 
-    .secondBanner p{
-      display: flex;
-      margin: 0px;
-      max-width: 99%;
-      flex-wrap: wrap;
-      color: #1C2752;
-      font-size: 70%;
-    }
   }

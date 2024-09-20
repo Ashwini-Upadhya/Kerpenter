@@ -1,0 +1,41 @@
+.planDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10% 5%;
+    text-align: center;
+}
+
+.planDiv h2{
+    text-align: center;
+    justify-self: center;
+}
+
+.planDiv img{
+    width: 100%;
+
+}
+
+#atcCheckbox{
+    margin-top: 10%;
+    width: auto;
+}
+
+.plandiv input{
+    width:80%;
+    margin: 10% 5%;
+    border: 1px solid  rgb(156, 156, 156);
+    padding: 5%;
+}
+
+.planDiv p {
+    margin:3%;
+}
+
+.planDiv button{
+    width: 80%;
+    margin: 5% 5%;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #1c2752;
+    border: 1px solid;
+}

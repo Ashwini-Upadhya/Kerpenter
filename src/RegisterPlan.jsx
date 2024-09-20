@@ -1,6 +1,7 @@
-import ''
-import Header from "../src/Header"
-import Menu from "../src/Menu"
+import './RegisterPlan.css'
+import Header from "./Header"
+import Menu from "./Menu"
+import Footer from './Footer'
 
 export default function RegisterPlan() {
     return (
@@ -16,24 +17,25 @@ export default function RegisterPlan() {
                 <div>
                     <form action="/actin">
                     <p>Company Name</p>
-                    <imput type="text"></imput>
+                    <input type="text"></input>
                     <p>Siret</p>
-                    <imput type="text"></imput>
+                    <input type="text"></input>
                     <p>First Name</p>
-                    <imput type="text"></imput>
+                    <input type="text"></input>
                     <p>Last Name</p>
-                    <imput type="text"></imput>
+                    <input type="text"></input>
                     <p>E-mail</p>
-                    <imput type="email"></imput>
+                    <input type="email"></input>
                     <p>Address</p>
-                    <imput type="text"></imput>
+                    <input type="text"></input>
                     <p>Phone</p>
-                    <imput type="text"></imput>
+                    <input type="text"></input>
                     <p>Password</p>
-                    <imput type="password"></imput>
-                    
-                    <imput type="checkbox"></imput>
+                    <input type="password"></input>
+                    <br />
+                    <input type="checkbox" id='atcCheckbox'></input>
                     <a href="">Accept Terms and Conditions</a>
+                    <br />
                     <button type="submit">Register</button>
                     </form>
                 </div>

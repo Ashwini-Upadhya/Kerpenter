@@ -15,17 +15,60 @@
 
 .menu {
   display: flex;
+  flex-wrap: nowrap;
   position: relative;
   width: 80%; 
   margin-left: 10%;
-  height: auto;
-  /* top:1rem; */
-  justify-content: end;
+  height: 10vh;
+  align-items: center;
+  justify-content: start;
   background-color: #FFB342;
   z-index: 1;
 }
 
-.getStarted {
+/* General styles for the menu */
+.menu {
+  padding-left: 3vw ;
+  display: flex;
+  align-items: center;
+}
+
+.menu p {
+  margin-right: 1rem;
+  font-size: 1vw;
+}
+
+/* Dropdown for "More" option */
+.more-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.more-menu:hover .more-dropdown {
+  display: block;
+}
+
+.more-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #FFB342;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  list-style-type: none;
+  z-index: 1;
+}
+
+.more-dropdown li {
+  padding: 0.5rem 1rem;
+}
+
+.more-dropdown li:hover {
+  background-color: #FFB342;
+}
+
+.menu .getStarted {
+  position: absolute;
+  left: 68vw;
   width: auto;
   height: 2.3rem;
   padding: 0.5rem 1rem; 
@@ -34,8 +77,8 @@
   color: white;
   text-align: center;
   cursor: pointer;
-  margin: 4%;
   border: 0px;
+  font-size: 1.3vw;
 }
 
 .banner {
@@ -55,17 +98,16 @@
 }
 
 .textdiv {
-  font-family: 'Times New Roman', Times, serif; 
+  font-family: Inter, sans-serif; 
   display: flex;
   flex-wrap: wrap;
   width: 40%; 
-  /* max-width: 600px; */
   margin-left: 20%; 
   justify-content: start;
 }
 
 .banner h1 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
   font-size: 1.5rem; 
   line-height: 2; 
@@ -84,13 +126,19 @@
 
 .banner .getStarted {
   background-color: #FFB342;
-  margin-left: 0;
-  color: #1C2752;
+  margin: 5vh 0vh;
+  color: #1c2752;
+  width: auto;
+  height: 2.3rem;
+  padding: 0.5rem 1rem; 
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 0px;
+  font-size: 1.3vw;
 }
 
-
-
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   *{
     /* outline: 1px solid red; */
     box-sizing: border-box;
@@ -103,10 +151,13 @@
     z-index: 1;
   }
 
-  .menu {
-    /* top: 1.5rem; */
-    justify-content: end;
-    height: 15%;
+  .menu p{
+    font-size: 0.8rem;
+  }
+
+  .menu .getStarted{
+    font-size: 1vw;
+    left: 65vw;
   }
 
   .banner {
@@ -120,7 +171,8 @@
 
   .textdiv {
     width: 95%;
-    margin-left: 0;
+    max-width: 50vw;
+    margin-left: 10vw;
     padding-left: 5%;
     text-align:start;
   }
@@ -137,8 +189,109 @@
     text-align: justify;
   }
 
-  .getStarted {
+  .banner .getStarted {
     display: block;
-    height:1.8rem;
+    height:3vw;
+  }
+}
+
+@media(max-width:680px){
+
+    .menu .getStarted{
+      height: 1.3rem;
+      padding: 0.5rem;
+      font-size: 10%;
+      left: 65vw;
+      white-space: nowrap;
+    }
+
+    .textdiv{
+     max-width: 80vw;
+    }
+
+    .banner h1{
+      font-size: 1rem;
+    }
+    
+    .banner p {
+      font-size: 0.8rem;
+    }
+
+    .banner .getStarted{
+      height: 1.5rem;
+      font-size: 15%;
+      margin-bottom: 5vh;
+    }
+
+    .menu{
+      height: 2.5rem;
+    }
+
+    .menu p {
+      font-size: 2vw;
+      max-width: 50vw;
+    }
+}
+
+@media (min-width: 1400px) {
+  *{
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
+  }
+
+  .topBar{
+    width: 100%;
+    height: 5vh;
+    overflow-x: hidden;
+    z-index: 1;
+  }
+
+  .menu {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+  }
+
+  .banner {
+    flex-direction: column;
+    height:100%;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .textdiv {
+    max-width: 60vw;
+    text-align:start;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+    justify-content: start;
+    text-align: start;
+  }
+
+  .banner p {
+    font-size: 1.5rem;
+    margin-top: 5%;
+    text-align: justify;
+  }
+
+  .banner .getStarted{
+    height: 4vw;
+  }
+
+  .menu .getStarted {
+    display: flex;
+    margin-right:3vw;
+    padding-top: 1.5vw ;
+    width:6vw;
+    white-space: nowrap;
+    padding-bottom: 1.5vw ;
+    align-items: center;
+    justify-content: center ;
+    border-radius: 10px;
+    font-size: 1rem;
   }
 }

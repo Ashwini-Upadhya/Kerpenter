@@ -4,6 +4,7 @@ import Menu from './Menu'
 import Banner from './banner'
 import Header from './Header'
 import Footer from './Footer'
+import RegisterPlan from './RegisterPlan'
 
 
 
@@ -23,6 +24,7 @@ function App() {
        thus speeding up the trial and error phase and allowing rapid order signing."> </Banner>
       
       <Footer/>
+      {/* <RegisterPlan/> */}
     </>
   )
 }

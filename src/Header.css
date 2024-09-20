@@ -7,7 +7,7 @@
 }
 
 .logo {
-  width: 8rem;
+  width: 8vw;
   height: auto;
   margin-left: 12%;
 }
@@ -48,15 +48,14 @@
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 1500px) {
 
   .header {
-      padding: 0.5rem;
-      justify-content: space-between;
+      padding: 2vh;
   }
 
   .logo {
-      width: 5rem;
+      width: 8vw;
       margin-left: 12%;
   }
 
@@ -65,42 +64,105 @@
   }
 
   .icon {
-      width: 1.7rem;
+      width: 4vw;
       margin-right: 0.1rem;
   }
 
-  .mail, .call {
-      width: auto;
+  .mail {
+    width: auto;
+    left: 60vw;
+  }
+  
+  .call {
+    width: auto;
+    left: 80vw;
   }
 
   .social-text {
-      margin-left: 0.25rem;
+      margin-left: 0.5rem;
   }
 
-  .social-text strong, .social-text p{
-      font-size: 0.75rem;
+  .social-text strong{
+      font-size: 1.5rem;
+  }
+  .social-text p{
+      font-size: 1.2rem;
   }
 }
+@media (max-width: 1500px) {
 
-@media (max-width: 480px) {
+  .header {
+      padding: 0.5rem;
+  }
+
+  .logo {
+      width: 7vw;
+      margin-left: 12%;
+  }
+  
+  .mail {
+    width: auto;
+    left: 65vw;
+  }
+  
+  .call {
+    width: auto;
+    left: 80vw;
+  }
+
+  .social-icon {
+      margin-right: 0px;
+  }
+
+  .icon {
+      width: 3vw;
+      margin-right: 0.1rem;
+  }
+
+  .social-text {
+    margin-top: -10%;
+      margin-left: 0.2vw;
+      line-height: 0.9;
+  }
+
+  .social-text strong{
+      font-size: 0.9vw;
+  }
+
+  .social-text p{
+    font-size: 0.7vw;
+}
+}
+
+@media (max-width: 700px) {
   .header {
       padding: 0.25rem;
       justify-content: space-between;
   }
 
   .logo {
-      width: 4rem;
+      width: 9vw;
+  }
+
+  .mail {
+    width: auto;
+    left: 50vw;
+  }
+
+  .call {
+    width: auto;
+    left: 70vw;
   }
 
   .icon {
-      width: 1.5rem;
+      width: 4vw;
   }
 
   .social-text strong{
-      font-size: 0.60rem;
+      font-size: 0.40rem;
   }
 
   .social-text p {
-    font-size: 0.40rem;
+    font-size: 0.30rem;
   }
 }
